@@ -5,6 +5,9 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+form > p {
+    text-align: center;
+}
 .main-div {
     display: block;
     margin: auto;
