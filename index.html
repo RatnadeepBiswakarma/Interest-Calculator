@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Interest Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="main-div">
+        <h2>Interest Calculator</h2>
+        <div class="option-div">Select Interest Period
+            <br>
+            <select name="Rate type" id="rate-type">
+                <option value="Monthly">Monthly</option>
+                <!--
+                    <option value="Yearly">Yearly</option>
+                -->
+            </select>
+        </div>
+        <div>
+            <form>
+                <input type="number" id="raw-amount" min="0" placeholder="Enter Original Amount">
+                <br>
+                <input type="number" id="int-rate" min="0" placeholder="Enter Interest Rate"><br>
+                <input type="number" id="months" min="1" value="1" placeholder="Total Month(s)">
+            </form>
+
+        </div>
+        <div id="space">
+
+        </div>
+        <div class="cal-div">
+            <input type="button" class="cal-btn" value="Calculate" onclick="calculateMe()">
+        </div>
+        <div class="output">
+            <p id="alert"></p>
+        </div>
+        <div class="output-div">
+            <div class="output"> Interest /month :
+                <span id="per-months"></span>
+            </div>
+            <div class="output"> Total Interest :
+                <span id="total-interest"></span>
+            </div>
+            <div class="output"> Subtotal Amount :
+                <span id="subtotal"></span>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
