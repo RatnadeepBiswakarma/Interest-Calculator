@@ -4,6 +4,7 @@ function calculateMe() {
     var period = document.getElementById("rate-type").value;
     let months = document.getElementById("months").value;
     if ((period === "Monthly") && (totalAmount > 0) && (interestRate > 0)) {
+        document.getElementById("alert").innerHTML = "";
         document.getElementById("per-months").innerHTML = ((totalAmount * interestRate) / 100).toFixed(2);
         document.getElementById("total-interest").innerHTML = (((totalAmount * interestRate) / 100) * months).toFixed(2);
         document.getElementById("subtotal").innerHTML = ((((totalAmount * interestRate) / 100) * months) + totalAmount).toFixed(2);
@@ -11,3 +12,8 @@ function calculateMe() {
         document.getElementById("alert").innerHTML = "Please provide above information correctly.";
     }
 }
+document.getElementById('months').addEventListener('keypress', (e) => {
+    if (e.which === 13) {
+        calculateMe();
+    }
+});
