@@ -1,3 +1,9 @@
 # Loan-Calculator
-this is a simple calculator for calculating interests of loan
-here is the link<br>  <a href="https://ratnadeepbiswakarma.github.io/Interest-Calculator/">Interest Calculator</a>
+### Simple Web based Calculator to calculate loan amount with interest.
+
+# How to see it live???
+ ## Go to this [Link](https://ratnadeepbiswakarma.github.io/Interest-Calculator/)
+# Languages and Dependencies
+ * HTML5
+ * CSS3
+ * JavaScript
